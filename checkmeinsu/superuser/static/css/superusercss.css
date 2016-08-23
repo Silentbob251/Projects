@@ -1,0 +1,56 @@
+.button1 {
+	-webkit-transition-duration: 0.4s;
+	transition-duration; 0.4s;
+	font-size: 15px;
+	border:black;
+	width: 150px;
+	background-color: blue;
+	color: white;
+}
+
+.button1:hover{
+	background-color: royalblue;
+	color: white;
+}
+.button{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius:5px;}
+
+.spacing{
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.body{
+	background-color: #ccc;
+}
+
+.table1{
+	width:50%;
+	border: 1px;
+	border-collapse: separate;
+}
+
+.table2{
+	width:20%;
+	border: 1px;
+	border-style: solid;
+	border-collapse: separate;
+}
+.table3{
+	width:20%;
+	border: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+.table4{
+
+	width:20%;
+	border: 1px;
+	border-style: solid;
+	border-collapse: separate;
+}
+.td1{
+	border-style: none;
+}

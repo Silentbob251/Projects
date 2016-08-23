@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<html>
+
+<head>
+<center><title> Check Me IN: Medical Check In Software</title>
+<h1>Check Me IN: Medical Check In Software</h1>
+
+<h2>Users</h2></center>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href= {% static 'css/superusercss.css' %}>
+</head><br></br>
+<body class="body">
+	<center>
+		<table class="table table-bordered table1">
+			<tbody>
+				<tr>
+					<th>User Name</th>
+					<th>Admin</th></div>
+					<th>Edit</th></div>
+					<th>Delete</th></div>
+				</tr>
+				<tr>
+					<td>kboyle</td>
+					<td>Yes</td>
+					<td><a class="button1" href= {% url 'superuser:userform' %}><button class="button1 button">Edit</button></a></td>
+					<td><button class="button1 button">Delete</button></td>
+				</tr>
+				<tr>
+					<td>mboston</th>
+					<td>No</th>
+					<td><a class="button1" href= {% url 'superuser:userform' %}><button class="button1 button">Edit</button></a></td>
+					<td><button class="button1 button">Delete</button></td>
+				</tr>
+				<tr>
+					<td colspan="4">  <center>
+						<a href="link">Add New User</a></center>
+					</td>
+				<tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<center><title> Check Me IN: Medical Check In Software</title>
+<h1>Check Me IN: Medical Check In Software</h1>
+
+<h2>Superuser</h2></center>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href= {% static 'css/superusercss.css' %}>
+</head>
+<body class="body">
+<br>
+<br>
+	<center>
+		<div class="container">
+			<div class="row spacing"><a class="button1" href= {% url 'superuser:userpage' %}><button class="button1 button">Users</button></a></div>
+			<div class="row spacing"><a class="button1" href= {% url 'superuser:configuration' %}><button class="button1 button">Configuration</button></a></div>
+			<div class="row spacing"><button class="button1 button">Reports</button></div>
+		</div>
+
+	</center>
+</body>
+</html>

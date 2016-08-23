@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<html>
+<head>
+<center><title> Check Me IN: Medical Check In Software</title>
+<h1>Check Me IN: Medical Check In Software</h1>
+
+<h2>Configuration</h2></center>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href= {% static 'css/superusercss.css' %}>
+</head>
+<br></br>
+<body class="body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				Site Title<input name="sitetitle" class="form-control" type="text" maxlength="55" size="35">
+				Set Admin Email<input name="email" class="form-control" type="text" maxlength="75" size="35">
+				TimeZone: <select name="timezone" class="form-control" >
+					<option value="3600" selected="">Eastern</option>
+					<option value="">Central</option>
+					<option value="-3600">Mountain</option>
+					<option value="-7200">Pacific</option>
+					</select>
+		</div>
+	</div>
+<br></br>
+		<div class="row">
+			<div class="col-md-2">
+				<h5><b>Apt Time</b></h5>
+					<input type="text" class="form-control" name="c1r1" placeholder="" value="9:30 AM">
+					<input type="text" class="form-control" name="c1r2" placeholder=""value="10:00AM">
+					<input type="text" class="form-control" name="c1r3" placeholder="Time 3" value="">
+					<input type="text" class="form-control"name="c1r4"  placeholder="Time 4" value="">
+					<input type="text" class="form-control"name="c1r5"  placeholder="" value="">
+					<input type="text" class="form-control"name="c1r6"  placeholder="" value="">
+					<input type="text" class="form-control"name="c1r7"  placeholder="" value="">
+			</div>
+			<div class="col-md-2">
+				<h5><b>Providers</b></h5>
+					<input type="text" class="form-control" name="c2r1" placeholder=""  value="Dr. Eric Cartman">
+					<input type="text" class="form-control" name="c2r2" placeholder=""  value="Dr. Stephen King ">
+					<input type="text" class="form-control" name="c2r3" placeholder=""  value="Dr. Ripley">
+					<input type="text" class="form-control" name="c2r4" placeholder="Provider 4"  value="">
+					<input type="text" class="form-control" name="c2r5" placeholder="Provider 5"  value="">
+					<input type="text" class="form-control" name="c2r6" placeholder=""  value="">
+			</div>
+			<div class="col-md-2">
+				<h5><b>Facility</b></h5>
+					<input type="text" class="form-control" name="c3r1" placeholder="" value=" Dental">
+					<input type="text" class="form-control" name="c3r2" placeholder="" value="Behavioral Healh ">
+					<input type="text" class="form-control" name="c3r3" placeholder="" value="Medical">
+					<input type="text" class="form-control" name="c3r4" placeholder="Facility 4"value="">
+			</div>
+		</div>
+<br></br>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="checkbox">
+					<b>Check to Make Mandatory</b><br></br>
+						<input type="checkbox"> Name</input><br></br>
+						<input type="checkbox"> DOB</input><br></br>
+						<input type="checkbox"> Address</input><br></br>
+						<input type="checkbox">Phone Number</input><br></br>
+						<input type="checkbox"> Email</input><br></br>
+						<input type="checkbox"> Appointment Time</input><br></br>
+						<input type="checkbox"> Provider</input><br></br>
+						<input type="checkbox"> Facility</input><br></br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
