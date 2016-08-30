@@ -19,7 +19,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^superuser/', include('superuser.urls', namespace ='superuser')),
-    url(r'^userpage/', include('superuser.urls', namespace ='userpage')),
-    url(r'^configuration/', include('superuser.urls', namespace ='configuration')),
-    url(r'^userform/', include('superuser.urls', namespace ='useform')),
+    url(r'^patient/', include('patients.urls', namespace ='patient')),
 ]

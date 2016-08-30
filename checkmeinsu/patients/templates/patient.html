@@ -1,0 +1,23 @@
+<html>
+
+<h>Patient Models View</h>
+<body>
+<ul>
+{% for Patient in patients %}
+  <li>{{Patient.last_name}}</li>
+  <li>{{Patient.first_name}}</li>
+  <li>{{Patient.phone_number}}</li>
+  <li>{{Patient.phone_type}}</li>
+  <li>{{Patient.street1}}</li>
+  <li>{{Patient.street2}}</li>
+  <li>{{Patient.city}}</li>
+  <li>{{Patient.state}}</li>
+  <li>{{Patient.zip_zip}}</li>
+  <li>{{Patient.second_number}}</li>
+  <li>{{Patient.second_type}}</li>
+  <li>{{Patient.email}}</li>
+  <li>{{Patient.insurance}}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
