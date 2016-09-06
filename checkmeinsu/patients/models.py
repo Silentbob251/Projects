@@ -1,6 +1,6 @@
 from django.db import models
 
-class Patient(models.Model):
+class Patient (models.Model):
     #required
     last_name = models.CharField(max_length=50)
     first_name =  models.CharField(max_length=50)

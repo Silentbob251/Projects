@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  </head>
+    <body>
+      <h1>Create New Patient </h1>
+        <form action="" method ="POST">
+          {% csrf_token %}
+          <div class = "input-group">
+            <label>{{ form.last_name.label}}</label>
+            {{patient.last_name|capfirst }}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.first_name.label}}</label>
+            {{ patient.first_name |capfirst }}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.phone_number.label}}</label>
+            {{ form.phone_number}}
+            {% if patient.phone_number < 9 %}
+              Please put in full phone number
+            {% endif %}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.phone_type.label}}</label>
+            {{ form.phone_type}}
+
+          </div>
+          <div class = "input-group">
+            <label>{{ form.street1.label}}</label>
+            {{ form.street1}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.street2.label}}</label>
+            {{ form.street2}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.city.label}}</label>
+            {{ form.city}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.state.label}}</label>
+            {{ form.state}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.zip_zip.label}}</label>
+            {{ form.zip_zip}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.second_number.label}}</label>
+            {{ form.second_number}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.second_type.label}}</label>
+            {{ form.second_type}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.email.label}}</label>
+            {{ form.email}}
+          </div>
+          <div class = "input-group">
+            <label>{{ form.insurance.label}}</label>
+            {{ form.insurance}}
+          </div>
+          <button type ="submit">Submit</button>
+        </form>
+    </body>
+</html>
