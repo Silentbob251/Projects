@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <h1>{{ patient.first_name|capfirst }} {{ patient.last_name|capfirst }}</h1>
+    <p>Email: {{ patient.email }}</p>
+    <p>Phone Number: {{ patient.phone_number }}</p>
+    <p><a href = "{% url 'patients:edit_patient' patient.id %}">Edit This Record</a></p>
+    <p><a href = "{% url 'patients:delete_patient' patient.id %}">Delete This Record</a></p>
+  </body>
+</html>

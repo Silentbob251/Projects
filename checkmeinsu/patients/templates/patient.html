@@ -3,22 +3,20 @@
     <body>
         {% for patient in patients %}
           <ul>
-              <li>{{patient.last_name}}</li>
-              <li>{{patient.first_name}}</li>
-              {% if patient.phone_number < 9 %}
-                Please put in full phone number
-              {% endif %}
-
-              <li>{{patient.phone_type}}</li>
-              <li>{{patient.street1}}</li>
-              <li>{{patient.street2}}</li>
-              <li>{{patient.city}}</li>
-              <li>{{patient.state}}</li>
-              <li>{{patient.zip_zip}}</li>
-              <li>{{patient.second_number}}</li>
-              <li>{{patient.second_type}}</li>
-              <li>{{patient.email}}</li>
-              <li>{{patient.insurance}}</li>
+              <li><a href="{% url 'patients:patient_detail' patient.id %}">
+                {{ patient.last_name|capfirst }}</a></li>
+              <li>{{ patient.first_name|capfirst }}</li>
+              <li>{{ patient.phone_number }}</li>
+              <li>{{ patient.phone_type }}</li>
+              <li>{{ patient.street1 }}</li>
+              <li>{{ patient.street2 }}</li>
+              <li>{{ patient.city }}</li>
+              <li>{{ patient.state }}</li>
+              <li>{{ patient.zip_zip }}</li>
+              <li>{{ patient.second_number }}</li>
+              <li>{{ patient.second_type }}</li>
+              <li>{{ patient.email }}</li>
+              <li>{{ patient.insurance }}</li>
           </ul>
         {% endfor %}
       </body>
